@@ -1,0 +1,91 @@
+{
+    "nav": {
+      "home": "Inicio",
+      "contact": "Contacto"
+    },
+    "lang_switcher": {
+      "label": "Idioma",
+      "en": "Inglés",
+      "es": "Español",
+      "fr": "Francés"
+    },
+    "homepage": {
+      "meta": {
+          "title": "Restroworks | Su Socio de Contenido Global",
+          "description": "Gestione contenido multilingüe sin problemas con nuestra potente integración de CMS. Hágase global, sin esfuerzo."
+      },
+      "hero": {
+        "headline": "Globalícese sin Esfuerzo.",
+        "subheading": "Restroworks combina el poder de Next.js con un CMS sin cabeza para ofrecer sitios web multilingües de alto rendimiento. Su contenido, para el mundo.",
+        "cta_button": "Empezar"
+      },
+      "features": {
+          "title": "Características Principales",
+          "items": [
+              {
+                  "title": "Contenido Dinámico",
+                  "description": "Gestione todo su contenido, desde el texto del héroe hasta las llamadas a la acción, a través de un CMS potente e intuitivo.",
+                  "icon": "DatabaseZap"
+              },
+              {
+                  "title": "Listo para Multi-idioma",
+                  "description": "Construido desde cero para la localización. Llegue a una audiencia global con facilidad.",
+                  "icon": "Languages"
+              },
+              {
+                  "title": "Optimizado para SEO",
+                  "description": "Sitemaps automáticos, robots.txt y metadatos controlados por CMS para un rendimiento superior en motores de búsqueda.",
+                  "icon": "TrendingUp"
+              },
+              {
+                  "title": "Increíblemente Rápido",
+                  "description": "Aprovechando el App Router de Next.js y los Server Components para una experiencia de usuario inigualable.",
+                  "icon": "Rocket"
+              }
+          ]
+      },
+      "testimonials": {
+          "title": "Con la Confianza de Innovadores",
+          "items": [
+              {
+                  "quote": "Restroworks revolucionó cómo manejamos el contenido multilingüe. Es rápido, intuitivo e increíblemente potente.",
+                  "author": "Alex Johnson",
+                  "role": "CTO, FutureTech"
+              },
+              {
+                  "quote": "La capacidad de gestionar contenido localizado y SEO desde un solo lugar es un cambio radical. ¡Nuestro tráfico global ha aumentado un 50%!",
+                  "author": "Maria Garcia",
+                  "role": "Directora de Marketing, Global Co."
+              }
+          ]
+      },
+      "cta": {
+          "headline": "¿Listo para Transformar Su Presencia Digital?",
+          "button_text": "Contactar a Ventas"
+      }
+    },
+    "contact_page": {
+      "meta": {
+          "title": "Contáctenos | Restroworks",
+          "description": "Póngase en contacto con el equipo de Restroworks. Estamos aquí para ayudarle a globalizarse."
+      },
+      "title": "Contáctenos",
+      "description": "¿Tiene alguna pregunta o quiere saber más? Rellene el siguiente formulario y nos pondremos en contacto con usted lo antes posible.",
+      "form": {
+          "name_label": "Nombre Completo",
+          "name_placeholder": "Juan Pérez",
+          "email_label": "Correo Electrónico",
+          "email_placeholder": "juan.perez@example.com",
+          "message_label": "Mensaje",
+          "message_placeholder": "¿Cómo podemos ayudarle?",
+          "submit_button": "Enviar Mensaje",
+          "success_title": "¡Mensaje Enviado!",
+          "success_description": "Gracias por contactarnos. Nos pondremos en contacto en breve.",
+          "error_title": "¡Oh, oh! Algo salió mal.",
+          "error_description": "Hubo un problema con su solicitud. Por favor, inténtelo de nuevo."
+      }
+    },
+    "footer": {
+      "copy": "Todos los derechos reservados."
+    }
+  }

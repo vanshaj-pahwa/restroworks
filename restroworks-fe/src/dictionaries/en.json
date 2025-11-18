@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "lang_switcher": {
+    "label": "Language",
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French"
+  },
+  "homepage": {
+    "meta": {
+        "title": "Restroworks | Your Restaurant Management Partner",
+        "description": "Seamlessly manage your restaurant's multilingual content with our powerful CMS integration. Go global, effortlessly."
+    },
+    "hero": {
+      "headline": "Go Global, Effortlessly.",
+      "subheading": "Restroworks combines the power of Next.js with a headless CMS to deliver high-performance, multilingual restaurant websites. Your content, for the world.",
+      "cta_button": "Get Started"
+    },
+    "features": {
+        "title": "Core Features",
+        "items": [
+            {
+                "title": "Dynamic Content",
+                "description": "Manage all your content, from hero text to CTAs, through a powerful and intuitive headless CMS.",
+                "icon": "DatabaseZap"
+            },
+            {
+                "title": "Multi-Language Ready",
+                "description": "Built from the ground up for localization. Reach a global audience with ease.",
+                "icon": "Languages"
+            },
+            {
+                "title": "SEO Optimized",
+                "description": "Automatic sitemaps, robots.txt, and CMS-driven metadata for top search engine performance.",
+                "icon": "TrendingUp"
+            },
+            {
+                "title": "Blazing Fast",
+                "description": "Leveraging Next.js App Router and Server Components for an unparalleled user experience.",
+                "icon": "Rocket"
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Trusted by Innovators",
+        "items": [
+            {
+                "quote": "Restroworks revolutionized how we handle multilingual content. It's fast, intuitive, and incredibly powerful.",
+                "author": "Alex Johnson",
+                "role": "CTO, FutureTech"
+            },
+            {
+                "quote": "The ability to manage localized content and SEO from one place is a game-changer. Our global traffic is up 50%!",
+                "author": "Maria Garcia",
+                "role": "Marketing Head, Global Co."
+            }
+        ]
+    },
+    "cta": {
+        "headline": "Ready to Transform Your Digital Presence?",
+        "button_text": "Contact Sales"
+    }
+  },
+  "contact_page": {
+    "meta": {
+        "title": "Contact Us | Restroworks",
+        "description": "Get in touch with the Restroworks team. We're here to help you go global."
+    },
+    "title": "Contact Us",
+    "description": "Have a question or want to learn more? Fill out the form below and we'll get back to you as soon as possible.",
+    "form": {
+        "name_label": "Full Name",
+        "name_placeholder": "John Doe",
+        "email_label": "Email Address",
+        "email_placeholder": "john.doe@example.com",
+        "message_label": "Message",
+        "message_placeholder": "How can we help you?",
+        "submit_button": "Send Message",
+        "success_title": "Message Sent!",
+        "success_description": "Thank you for reaching out. We'll be in touch shortly.",
+        "error_title": "Uh oh! Something went wrong.",
+        "error_description": "There was a problem with your request. Please try again."
+    }
+  },
+  "footer": {
+    "copy": "All rights reserved."
+  }
+}
