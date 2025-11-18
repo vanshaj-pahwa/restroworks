@@ -29,7 +29,7 @@ This project demonstrates enterprise-grade web development practices including:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/restroworks.git
+git clone https://github.com/vanshaj-pahwa/restroworks.git
 cd restroworks
 ```
 
