@@ -55,11 +55,171 @@ npm run dev
 
 **Frontend:** http://localhost:3001 (or next available port)
 
-### 4. Create Content
+### 4. Create Content & View Your Website
 
-1. Visit http://localhost:3000/admin
-2. Create your first admin user
-3. Follow the [CMS Content Creation Guide](./CMS_CONTENT_CREATION_GUIDE.md)
+Follow the detailed guide below to see your content live!
+
+---
+
+## 📖 Step-by-Step Usage Guide
+
+### Step 1: Access PayloadCMS Admin Panel
+
+1. **Open your browser** and go to: http://localhost:3000/admin
+2. **Create your first admin user:**
+   - Email: `admin@restroworks.com`
+   - Password: `YourSecurePassword123`
+   - Click "Create"
+
+### Step 2: Create Your First Page
+
+1. **Navigate to Collections** → Click **"Pages"** in the sidebar
+2. **Click "Create New"** button (top right)
+3. **Fill in the page details:**
+   - **Title:** `Home`
+   - **Slug:** Leave empty (will auto-generate as "home")
+   - **Published At:** Select today's date
+   - **Status:** Make sure it's set to "Published" (not Draft)
+
+### Step 3: Add Hero Block to Your Page
+
+1. **Scroll down to "Layout" section**
+2. **Click "Add Block"** button
+3. **Select "Hero Section"** from the dropdown
+4. **Fill in the Hero content:**
+
+   ```
+   Badge Text: "Welcome to Restroworks"
+   Main Headline: "Transform Your Restaurant Operations"
+   Highlighted Text: "With AI-Powered Solutions"
+   Subheadline: "Streamline orders, manage inventory, and delight customers with our all-in-one restaurant management platform"
+   Primary CTA Button Text: "Start Free Trial"
+   Primary CTA Link: "/contact"
+   Secondary CTA Button Text: "Watch Demo"
+   Secondary CTA Link: "#demo"
+   Hero Style: Gradient
+   Show Statistics: ✓ (checked)
+   ```
+
+5. **Add Statistics** (click "Add Item" 3 times):
+   - **Stat 1:** Value: `99.9%`, Label: `Uptime`
+   - **Stat 2:** Value: `5K+`, Label: `Restaurants`
+   - **Stat 3:** Value: `24/7`, Label: `Support`
+
+6. **Click "Save"** at the bottom
+
+### Step 4: Add Features Block
+
+1. **Click "Add Block"** again (below the Hero block)
+2. **Select "Feature"** from dropdown
+3. **Fill in:**
+   ```
+   Title: "Why Choose Restroworks"
+   ```
+
+4. **Add Features** (click "Add Item" 3 times):
+
+   **Feature 1:**
+   ```
+   Title: "Lightning Fast Performance"
+   Description: "Process orders in milliseconds with our optimized infrastructure. Never keep your customers waiting."
+   ```
+
+   **Feature 2:**
+   ```
+   Title: "Bank-Level Security"
+   Description: "Your data is protected with enterprise-grade encryption and regular security audits."
+   ```
+
+   **Feature 3:**
+   ```
+   Title: "Scale Effortlessly"
+   Description: "From single location to multi-chain, our platform grows with your business needs."
+   ```
+
+5. **Click "Save"**
+
+### Step 5: Add Testimonials Block
+
+1. **Click "Add Block"** again
+2. **Select "Testimonial"** from dropdown
+3. **Fill in:**
+   ```
+   Title: "What Our Customers Say"
+   ```
+
+4. **Add Testimonials** (click "Add Item" 2 times):
+
+   **Testimonial 1:**
+   ```
+   Quote: "Restroworks transformed how we manage our restaurant. Orders are faster, staff is happier, and customers love the experience. Best investment we've made!"
+   Author: "Sarah Johnson"
+   Role: "Owner, The Golden Spoon"
+   ```
+
+   **Testimonial 2:**
+   ```
+   Quote: "The analytics dashboard alone is worth it. We've increased our efficiency by 40% and reduced food waste significantly. Highly recommended!"
+   Author: "Michael Chen"
+   Role: "Manager, Dragon Palace"
+   ```
+
+5. **Click "Save"**
+
+### Step 6: Add CTA Block
+
+1. **Click "Add Block"** one more time
+2. **Select "Call to Action"** from dropdown
+3. **Fill in:**
+   ```
+   Main Heading: "Ready to Transform Your Restaurant?"
+   Description: "Join thousands of satisfied customers and transform your business today"
+   Primary Button Text: "Start Free Trial"
+   Primary Button Link: "/contact"
+   Secondary Button Text: "Schedule Demo"
+   Secondary Button Link: "#demo"
+   ```
+
+4. **Click "Save"**
+
+### Step 7: Publish Your Page
+
+1. **Scroll to the top** of the page
+2. **Click "Save"** button (top right)
+3. **Verify Status** is "Published" (not "Draft")
+4. **Click "Publish"** if you see that button
+
+### Step 8: View Your Website! 🎉
+
+1. **Open a new browser tab**
+2. **Go to:** http://localhost:3001/en
+3. **You should see:**
+   - ✅ Beautiful hero section with your headline
+   - ✅ Statistics showing 99.9%, 5K+, 24/7
+   - ✅ Features section with 3 cards
+   - ✅ Testimonials from Sarah and Michael
+   - ✅ CTA section at the bottom
+
+### Step 9: Test Language Switching
+
+1. **Click the language switcher** in the header (globe icon)
+2. **Select "ES" (Spanish)**
+3. **Notice:** All UI text changes to Spanish!
+4. **Try "FR" (French)** - UI changes to French!
+
+**Note:** The CMS content (headlines, descriptions) will stay in English until you create Spanish/French versions of the page.
+
+### Step 10: Create Multi-Language Content (Optional)
+
+1. **Go back to PayloadCMS Admin**
+2. **Click on your "Home" page**
+3. **Look for "Locale" dropdown** (top right)
+4. **Select "Spanish (es)"**
+5. **Translate all the content** to Spanish
+6. **Click "Save"**
+7. **Repeat for French (fr)**
+
+Now when you switch languages, both UI and content will change!
 
 ---
 
