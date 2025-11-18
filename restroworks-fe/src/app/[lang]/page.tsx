@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { Locale } from '@/lib/i18n-config';
 import { getPage, type Page } from '@/lib/payload-types';
 import { BlockRenderer } from '@/components/layout/block-renderer';
+import { getDictionary } from '@/lib/dictionaries';
 
 type Props = {
   params: Promise<{ lang: Locale }>;
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function HomePage({ params }: Props) {
   const { lang } = await params;
   const page: Page | null = await getPage(lang);
+  const dictionary = await getDictionary(lang);
 
   if (!page || !page.layout || page.layout.length === 0) {
     // This could be a 404 not found page
@@ -41,7 +43,7 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <BlockRenderer lang={lang} blocks={page.layout} />
+      <BlockRenderer lang={lang} blocks={page.layout} dictionary={dictionary} />
     </>
   );
 }

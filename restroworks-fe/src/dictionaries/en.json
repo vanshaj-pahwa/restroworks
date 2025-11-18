@@ -87,5 +87,38 @@
   },
   "footer": {
     "copy": "All rights reserved."
+  },
+  "hero": {
+    "badge": "Welcome to the Future",
+    "stats": {
+      "uptime": "Uptime",
+      "customers": "Happy Customers",
+      "support": "Support"
+    },
+    "social_proof": {
+      "trusted": "Trusted by 10,000+ users",
+      "rating": "rating"
+    }
+  },
+  "cta": {
+    "ready": "Ready to get started?",
+    "trust_badges": {
+      "no_card": "No credit card required",
+      "free_trial": "14-day free trial",
+      "cancel": "Cancel anytime"
+    }
+  },
+  "testimonials": {
+    "section_title": "What Our Customers Say",
+    "subtitle": "See what our customers have to say about their experience"
+  },
+  "contact": {
+    "send_message": "Send us a message",
+    "form_description": "Fill out the form below and we'll get back to you as soon as possible.",
+    "trust": {
+      "response": "Response within 24 hours",
+      "secure": "Secure & confidential",
+      "no_spam": "No spam, ever"
+    }
   }
 }

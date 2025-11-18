@@ -28,9 +28,11 @@ const componentMap = {
 export function BlockRenderer({
   blocks,
   lang,
+  dictionary,
 }: {
   blocks: Block[];
   lang: Locale;
+  dictionary: any;
 }) {
   return (
     <>
@@ -44,7 +46,7 @@ export function BlockRenderer({
           );
         }
         // @ts-ignore
-        return <Component key={index} lang={lang} {...block} />;
+        return <Component key={index} lang={lang} dictionary={dictionary} {...block} />;
       })}
     </>
   );

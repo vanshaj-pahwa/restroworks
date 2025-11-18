@@ -118,10 +118,10 @@ export default async function ContactPage({ params }: Props) {
               <CardContent className="p-8 sm:p-12">
                 <div className="mb-8">
                   <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                    Send us a message
+                    {dictionary.contact.send_message}
                   </h2>
                   <p className="text-gray-600">
-                    Fill out the form below and we'll get back to you as soon as possible.
+                    {dictionary.contact.form_description}
                   </p>
                 </div>
                 <ContactForm dictionary={dictionary.contact_page} />
@@ -135,15 +135,15 @@ export default async function ContactPage({ params }: Props) {
           <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-600">
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-green-500" />
-              <span>Response within 24 hours</span>
+              <span>{dictionary.contact.trust.response}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-blue-500" />
-              <span>Secure & confidential</span>
+              <span>{dictionary.contact.trust.secure}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-purple-500" />
-              <span>No spam, ever</span>
+              <span>{dictionary.contact.trust.no_spam}</span>
             </div>
           </div>
         </div>

@@ -87,5 +87,38 @@
     },
     "footer": {
       "copy": "Todos los derechos reservados."
+    },
+    "hero": {
+      "badge": "Bienvenido al Futuro",
+      "stats": {
+        "uptime": "Tiempo Activo",
+        "customers": "Clientes Felices",
+        "support": "Soporte"
+      },
+      "social_proof": {
+        "trusted": "Confiado por más de 10,000 usuarios",
+        "rating": "calificación"
+      }
+    },
+    "cta": {
+      "ready": "¿Listo para comenzar?",
+      "trust_badges": {
+        "no_card": "No se requiere tarjeta de crédito",
+        "free_trial": "Prueba gratuita de 14 días",
+        "cancel": "Cancelar en cualquier momento"
+      }
+    },
+    "testimonials": {
+      "section_title": "Lo Que Dicen Nuestros Clientes",
+      "subtitle": "Vea lo que nuestros clientes tienen que decir sobre su experiencia"
+    },
+    "contact": {
+      "send_message": "Envíanos un mensaje",
+      "form_description": "Complete el formulario a continuación y nos pondremos en contacto con usted lo antes posible.",
+      "trust": {
+        "response": "Respuesta en 24 horas",
+        "secure": "Seguro y confidencial",
+        "no_spam": "Sin spam, nunca"
+      }
     }
   }

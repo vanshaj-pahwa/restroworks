@@ -17,6 +17,7 @@ type HeroProps = {
   style?: 'gradient' | 'image' | 'minimal' | 'split';
   showStats?: boolean;
   stats?: Array<{ value: string; label: string }>;
+  dictionary?: any;
 };
 
 export function HeroSection(props: HeroProps) {
@@ -34,10 +35,15 @@ export function HeroSection(props: HeroProps) {
     style = 'gradient',
     showStats = true,
     stats,
+    dictionary,
   } = props;
 
-  // Default stats if none provided
-  const displayStats = stats && stats.length > 0 ? stats : [
+  // Default stats if none provided - now localized
+  const displayStats = stats && stats.length > 0 ? stats : dictionary ? [
+    { value: '99.9%', label: dictionary.hero.stats.uptime },
+    { value: '10K+', label: dictionary.hero.stats.customers },
+    { value: '24/7', label: dictionary.hero.stats.support },
+  ] : [
     { value: '99.9%', label: 'Uptime' },
     { value: '10K+', label: 'Happy Customers' },
     { value: '24/7', label: 'Support' },
@@ -193,7 +199,7 @@ export function HeroSection(props: HeroProps) {
                     </div>
                   ))}
                 </div>
-                <span className="font-medium">Trusted by 10,000+ users</span>
+                <span className="font-medium">{dictionary?.hero?.social_proof?.trusted || 'Trusted by 10,000+ users'}</span>
               </div>
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -201,7 +207,7 @@ export function HeroSection(props: HeroProps) {
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                   </svg>
                 ))}
-                <span className="ml-2 font-medium">4.9/5 rating</span>
+                <span className="ml-2 font-medium">4.9/5 {dictionary?.hero?.social_proof?.rating || 'rating'}</span>
               </div>
             </div>
           </div>

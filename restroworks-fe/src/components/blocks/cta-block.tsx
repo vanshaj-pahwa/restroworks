@@ -26,7 +26,7 @@ function extractTextFromLexical(richText: any): string {
   return '';
 }
 
-export function CtaBlockRenderer(block: CallToActionBlockType) {
+export function CtaBlockRenderer(block: CallToActionBlockType & { dictionary?: any }) {
   // Support both old and new field names
   const richText = block.richText || (block as any).content;
   const displayText = block.text || extractTextFromLexical(richText);
@@ -35,6 +35,7 @@ export function CtaBlockRenderer(block: CallToActionBlockType) {
   const description = (block as any).description || '';
   const secondaryButtonText = (block as any).secondaryButtonText || '';
   const secondaryButtonLink = (block as any).secondaryButtonLink || '';
+  const dictionary = block.dictionary;
 
   return (
     <section className="relative w-full overflow-hidden py-24 px-4">
@@ -52,7 +53,7 @@ export function CtaBlockRenderer(block: CallToActionBlockType) {
         {/* Sparkle decoration */}
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
           <Sparkles className="h-4 w-4 text-white" />
-          <span className="text-sm font-medium text-white">Ready to get started?</span>
+          <span className="text-sm font-medium text-white">{dictionary?.cta?.ready || 'Ready to get started?'}</span>
         </div>
 
         {/* Main text */}
@@ -101,15 +102,15 @@ export function CtaBlockRenderer(block: CallToActionBlockType) {
         <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-white/80">
           <div className="flex items-center gap-2">
             <div className="h-2 w-2 rounded-full bg-green-400" />
-            <span>No credit card required</span>
+            <span>{dictionary?.cta?.trust_badges?.no_card || 'No credit card required'}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="h-2 w-2 rounded-full bg-blue-400" />
-            <span>14-day free trial</span>
+            <span>{dictionary?.cta?.trust_badges?.free_trial || '14-day free trial'}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="h-2 w-2 rounded-full bg-purple-400" />
-            <span>Cancel anytime</span>
+            <span>{dictionary?.cta?.trust_badges?.cancel || 'Cancel anytime'}</span>
           </div>
         </div>
       </div>

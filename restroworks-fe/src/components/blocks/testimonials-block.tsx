@@ -1,8 +1,8 @@
 import type { TestimonialBlockType } from '@/lib/payload-types';
 import { Quote, Star } from 'lucide-react';
 
-export function TestimonialsBlockRenderer(block: TestimonialBlockType) {
-  const { title, testimonials } = block;
+export function TestimonialsBlockRenderer(block: TestimonialBlockType & { dictionary?: any }) {
+  const { title, testimonials, dictionary } = block;
 
   if (!testimonials || testimonials.length === 0) {
     return null;
@@ -21,7 +21,7 @@ export function TestimonialsBlockRenderer(block: TestimonialBlockType) {
               <span className="text-gradient">{title}</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              See what our customers have to say about their experience
+              {dictionary?.testimonials?.subtitle || 'See what our customers have to say about their experience'}
             </p>
             <div className="mx-auto mt-4 h-1 w-24 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full" />
           </div>
