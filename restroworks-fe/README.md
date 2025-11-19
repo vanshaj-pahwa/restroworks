@@ -2,6 +2,8 @@
 
 > **Production-ready, multi-language website with headless CMS integration**
 
+**🚀 Live Demo:** https://restroworks-fe.vercel.app/
+
 A modern, SEO-optimized frontend built with Next.js 15, featuring PayloadCMS integration, multi-language support, and professional UI design.
 
 ---
@@ -216,6 +218,11 @@ Edit dictionary files in `src/dictionaries/`:
 
 ### Access SEO Files
 
+**Live Demo:**
+- Sitemap: https://restroworks-fe.vercel.app/sitemap.xml
+- Robots: https://restroworks-fe.vercel.app/robots.txt
+
+**Local Development:**
 - Sitemap: http://localhost:3001/sitemap.xml
 - Robots: http://localhost:3001/robots.txt
 

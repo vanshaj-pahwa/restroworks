@@ -4,6 +4,64 @@ A modern, SEO-optimized, multi-language website built with Next.js 15 (frontend)
 
 ---
 
+## 🚀 Live Demo
+
+- **Frontend Website:** https://restroworks-fe.vercel.app/
+- **Admin Panel (CMS):** https://restroworks-be.vercel.app/admin
+
+**Demo Credentials:**
+- Email: `demo@restroworks.com`
+- Password: `demo123`
+
+---
+
+## 📖 Quick Guide
+
+Want to see how the CMS works? Follow these simple steps:
+
+### Step 1: Access the Admin Panel
+
+1. **Open your browser** and go to: https://restroworks-be.vercel.app/admin
+2. **Login** with demo credentials:
+   - Email: `demo@restroworks.com`
+   - Password: `demo123`
+
+### Step 3: View Existing Content
+
+1. **Click "Pages"** in the left sidebar
+2. **Click on "Home"** page to see the content
+3. **Scroll down** to see all the content blocks (Hero, Features, Testimonials, CTA)
+
+### Step 4: Edit Content (Try It!)
+
+1. **Change the headline** in the Hero section
+2. **Update a feature description**
+3. **Click "Save"** at the bottom
+4. **Visit the frontend** (URL coming soon) to see your changes live!
+
+### Step 5: Add New Content
+
+1. **Click "Add Block"** button
+2. **Choose a block type** (Hero, Features, Testimonials, CTA)
+3. **Fill in the content**
+4. **Click "Save"** and **"Publish"**
+
+### Step 6: Upload Images
+
+1. **Click "Media"** in the left sidebar
+2. **Click "Create New"**
+3. **Upload your image**
+4. **Use it in any block** by selecting it from the dropdown
+
+### Step 7: Multi-Language Content
+
+1. **Look for "Locale" dropdown** (top right)
+2. **Select "Spanish (es)"** or **"French (fr)"**
+3. **Translate the content**
+4. **Save** - Now your content is available in multiple languages!
+
+---
+
 ## 🎯 Project Overview
 
 This project demonstrates enterprise-grade web development practices including:
@@ -61,14 +119,17 @@ Follow the detailed guide below to see your content live!
 
 ---
 
-## 📖 Step-by-Step Usage Guide
+## 📖 Step-by-Step Usage Guide (Local Development)
 
 ### Step 1: Access PayloadCMS Admin Panel
 
+**For Live Demo:** Use https://restroworks-be.vercel.app/admin (credentials above)
+
+**For Local Development:**
 1. **Open your browser** and go to: http://localhost:3000/admin
 2. **Create your first admin user:**
-   - Email: `admin@restroworks.com`
-   - Password: `YourSecurePassword123`
+   - Email: `demo@restroworks.com`
+   - Password: `demo123`
    - Click "Create"
 
 ### Step 2: Create Your First Page
@@ -191,14 +252,20 @@ Follow the detailed guide below to see your content live!
 
 ### Step 8: View Your Website! 🎉
 
+**For Live Demo:** 
+1. **Open a new browser tab**
+2. **Go to:** https://restroworks-fe.vercel.app/en
+
+**For Local Development:**
 1. **Open a new browser tab**
 2. **Go to:** http://localhost:3001/en
-3. **You should see:**
-   - ✅ Beautiful hero section with your headline
-   - ✅ Statistics showing 99.9%, 5K+, 24/7
-   - ✅ Features section with 3 cards
-   - ✅ Testimonials from Sarah and Michael
-   - ✅ CTA section at the bottom
+
+**You should see:**
+- ✅ Beautiful hero section with your headline
+- ✅ Statistics showing 99.9%, 5K+, 24/7
+- ✅ Features section with 3 cards
+- ✅ Testimonials from Sarah and Michael
+- ✅ CTA section at the bottom
 
 ### Step 9: Test Language Switching
 
@@ -392,6 +459,12 @@ restroworks/
 ## 🔍 SEO Features
 
 ### Access SEO Files
+
+**Live Demo:**
+- Sitemap: https://restroworks-fe.vercel.app/sitemap.xml
+- Robots: https://restroworks-fe.vercel.app/robots.txt
+
+**Local Development:**
 - Sitemap: http://localhost:3001/sitemap.xml
 - Robots: http://localhost:3001/robots.txt
 
