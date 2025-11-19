@@ -41,6 +41,10 @@ A modern, SEO-optimized, multi-language website built with Next.js 15 (frontend)
 <img width="2880" height="1562" alt="image" src="https://github.com/user-attachments/assets/8c66060e-f807-4d87-9c36-ac09feb8ef3b" />
 <img width="2880" height="1556" alt="image" src="https://github.com/user-attachments/assets/e914a94f-7335-4419-9776-51543e4f0447" />
 
+- Localization
+  <img width="2880" height="1546" alt="image" src="https://github.com/user-attachments/assets/74467134-56ea-42e7-b361-a10d9a223550" />
+
+
 ## 📖 Quick Guide
 
 Want to see how the CMS works? Follow these simple steps:
