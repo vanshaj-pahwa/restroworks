@@ -119,7 +119,7 @@ export function HeroSection(props: HeroProps) {
                       fill
                       className="object-contain"
                       priority
-                      unoptimized
+                      sizes="(max-width: 768px) 128px, 160px"
                     />
                   </div>
                 </div>
@@ -272,7 +272,7 @@ export function HeroSection(props: HeroProps) {
                       fill
                       className="object-contain p-8"
                       priority
-                      unoptimized
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
                 </div>
