@@ -10,7 +10,7 @@ type Dictionary = {
 
 export function Footer({
   dictionary,
-  lang,
+  lang: _lang,
 }: {
   dictionary: Dictionary;
   lang: Locale;

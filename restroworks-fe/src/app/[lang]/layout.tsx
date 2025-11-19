@@ -3,14 +3,14 @@ import { getDictionary } from '@/lib/dictionaries';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
+type Props = {
   children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
-}) {
-  const { lang } = await params;
+  params: Promise<{ lang: string }>;
+};
+
+export default async function LocaleLayout({ children, params }: Props) {
+  const resolvedParams = await params;
+  const lang = resolvedParams.lang as Locale;
   const dictionary = await getDictionary(lang);
 
   return (
