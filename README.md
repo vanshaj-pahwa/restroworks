@@ -15,6 +15,24 @@ A modern, SEO-optimized, multi-language website built with Next.js 15 (frontend)
 
 ---
 
+## App Screenshots
+
+<h2>Frontend:</h2>
+
+- <h3>Home Page</h3>
+<img width="2880" height="1556" alt="image" src="https://github.com/user-attachments/assets/239fe8f7-d4c3-4f7d-8215-c5dcc899e9b5" />
+<img width="2880" height="1556" alt="image" src="https://github.com/user-attachments/assets/3656d35e-8941-4778-98c6-591686fe64c9" />
+<img width="2880" height="1558" alt="image" src="https://github.com/user-attachments/assets/330337c6-15b1-420f-a5c5-8d12b70a1679" />
+<img width="2880" height="1556" alt="image" src="https://github.com/user-attachments/assets/435d68f3-abda-4ba6-9317-f1c8bfbfcfda" />
+
+- <h3>Products Page</h3>
+<img width="2880" height="1558" alt="image" src="https://github.com/user-attachments/assets/b653489c-1cef-4f1e-b315-072c86dd5229" />
+<img width="2878" height="1556" alt="image" src="https://github.com/user-attachments/assets/271ef1d7-c48a-4602-87df-e129eb6c026a" />
+
+- <h3>Contact Page</h3>
+<img width="2880" height="1562" alt="image" src="https://github.com/user-attachments/assets/8c66060e-f807-4d87-9c36-ac09feb8ef3b" />
+<img width="2880" height="1556" alt="image" src="https://github.com/user-attachments/assets/e914a94f-7335-4419-9776-51543e4f0447" />
+
 ## 📖 Quick Guide
 
 Want to see how the CMS works? Follow these simple steps:
