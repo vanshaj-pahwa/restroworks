@@ -54,9 +54,31 @@ export type FormBlockType = {
 export type HeroBlockType = {
   blockType: 'hero';
   id?: string;
+  badge?: string;
   headline?: string;
-  subheading?: string;
+  highlightedText?: string;
+  subheadline?: string;
   cta_button?: string;
+  cta_link?: string;
+  secondary_cta_button?: string;
+  secondary_cta_link?: string;
+  image?: string | {
+    id?: string;
+    url?: string;
+    filename?: string;
+    mimeType?: string;
+    filesize?: number;
+    width?: number;
+    height?: number;
+    alt?: string;
+  };
+  style?: 'gradient' | 'image' | 'minimal' | 'split';
+  showStats?: boolean;
+  stats?: Array<{
+    id?: string;
+    value?: string;
+    label?: string;
+  }>;
 };
 
 // Features section block (backend uses 'feature' slug)

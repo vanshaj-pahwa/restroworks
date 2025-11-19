@@ -92,6 +92,40 @@ export function HeroSection(props: HeroProps) {
         <div className={`flex min-h-[70vh] items-center ${style === 'split' ? 'justify-between gap-12' : 'justify-center'}`}>
           <div className={`${style === 'split' ? 'max-w-2xl' : 'max-w-5xl text-center'} space-y-8`}>
             
+            {/* Logo/Image - Display if provided and not in split style */}
+            {image && style !== 'split' && (() => {
+              // Handle different image formats from PayloadCMS
+              let imageUrl = '';
+              
+              if (typeof image === 'string') {
+                imageUrl = image;
+              } else if (image && typeof image === 'object') {
+                // PayloadCMS returns image as object with url property
+                imageUrl = image.url || '';
+              }
+              
+              // Construct full URL if it's a relative path
+              if (imageUrl && !imageUrl.startsWith('http')) {
+                const baseUrl = process.env.NEXT_PUBLIC_PAYLOAD_CMS_URL || 'http://localhost:3000';
+                imageUrl = `${baseUrl}${imageUrl}`;
+              }
+              
+              return imageUrl ? (
+                <div className="mb-8 flex justify-center animate-fade-in">
+                  <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm p-4">
+                    <Image
+                      src={imageUrl}
+                      alt="Restroworks Logo"
+                      fill
+                      className="object-contain"
+                      priority
+                      unoptimized={imageUrl.includes('localhost')}
+                    />
+                  </div>
+                </div>
+              ) : null;
+            })()}
+
             {/* Optional Badge */}
             {badge && (
               <div className={`inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-2 text-sm font-medium border border-white/20 ${
@@ -213,22 +247,38 @@ export function HeroSection(props: HeroProps) {
           </div>
 
           {/* Split screen image */}
-          {style === 'split' && image && (
-            <div className="hidden lg:block lg:w-1/2">
-              <div className="relative h-[600px] w-full">
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-500/20 to-indigo-500/20 blur-3xl" />
-                <div className="relative h-full w-full rounded-3xl border border-white/20 bg-white/10 backdrop-blur-sm p-4 shadow-2xl">
-                  <Image
-                    src={typeof image === 'string' ? image : image.url || ''}
-                    alt="Hero illustration"
-                    fill
-                    className="object-contain p-8"
-                    priority
-                  />
+          {style === 'split' && image && (() => {
+            let imageUrl = '';
+            
+            if (typeof image === 'string') {
+              imageUrl = image;
+            } else if (image && typeof image === 'object') {
+              imageUrl = image.url || '';
+            }
+            
+            if (imageUrl && !imageUrl.startsWith('http')) {
+              const baseUrl = process.env.NEXT_PUBLIC_PAYLOAD_CMS_URL || 'http://localhost:3000';
+              imageUrl = `${baseUrl}${imageUrl}`;
+            }
+            
+            return imageUrl ? (
+              <div className="hidden lg:block lg:w-1/2">
+                <div className="relative h-[600px] w-full">
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-500/20 to-indigo-500/20 blur-3xl" />
+                  <div className="relative h-full w-full rounded-3xl border border-white/20 bg-white/10 backdrop-blur-sm p-4 shadow-2xl">
+                    <Image
+                      src={imageUrl}
+                      alt="Hero illustration"
+                      fill
+                      className="object-contain p-8"
+                      priority
+                      unoptimized={imageUrl.includes('localhost')}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
+            ) : null;
+          })()}
         </div>
       </div>
 
