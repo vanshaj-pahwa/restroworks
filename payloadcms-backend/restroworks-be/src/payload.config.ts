@@ -77,6 +77,7 @@ export default buildConfig({
     Media,
     Categories,
     Users,
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     require('./collections/ContactSubmissions').ContactSubmissions,
   ],
   cors: [getServerSideURL()].filter(Boolean),
