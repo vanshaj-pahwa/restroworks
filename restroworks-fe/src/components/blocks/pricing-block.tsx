@@ -18,7 +18,7 @@ export function PricingBlock({ title, subtitle, plans, lang, dictionary }: Prici
   const popularLabel = dictionary?.products?.pricing?.popular || 'Most Popular';
 
   return (
-    <section className="py-20 bg-white">
+    <section id="pricing" className="py-20 bg-white scroll-mt-16">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         {(title || subtitle) && (
