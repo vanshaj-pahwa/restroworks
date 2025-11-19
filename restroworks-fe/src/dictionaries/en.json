@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "products": "Products",
     "contact": "Contact"
   },
   "lang_switcher": {
@@ -119,6 +120,103 @@
       "response": "Response within 24 hours",
       "secure": "Secure & confidential",
       "no_spam": "No spam, ever"
+    }
+  },
+  "products": {
+    "meta": {
+      "title": "Products & Features | Restroworks",
+      "description": "Discover our powerful restaurant management solutions with advanced features and flexible pricing."
+    },
+    "hero": {
+      "badge": "Products & Features",
+      "title": "Everything You Need to Succeed",
+      "subtitle": "Powerful features designed to help your restaurant thrive in the digital age"
+    },
+    "featuresSection": {
+      "title": "Powerful Features",
+      "subtitle": "Everything you need to manage your restaurant efficiently"
+    },
+    "features": {
+      "performance": {
+        "title": "Lightning Fast",
+        "description": "Built on Next.js 15 for blazing fast performance and optimal user experience"
+      },
+      "security": {
+        "title": "Enterprise Security",
+        "description": "Bank-level encryption and security measures to protect your data"
+      },
+      "multilingual": {
+        "title": "Multi-Language",
+        "description": "Reach global audiences with built-in support for multiple languages"
+      },
+      "analytics": {
+        "title": "Advanced Analytics",
+        "description": "Track performance with detailed insights and real-time reporting"
+      },
+      "team": {
+        "title": "Team Collaboration",
+        "description": "Work together seamlessly with role-based access control"
+      },
+      "realtime": {
+        "title": "Real-Time Updates",
+        "description": "See changes instantly with live preview and instant publishing"
+      }
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that's right for your business",
+      "popular": "Most Popular",
+      "custom": "Custom",
+      "cta": "Get Started"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "$29",
+        "description": "Perfect for small restaurants",
+        "features": [
+          "Up to 3 locations",
+          "Basic analytics",
+          "Email support",
+          "1 GB storage",
+          "Multi-language support"
+        ]
+      },
+      "professional": {
+        "name": "Professional",
+        "price": "$99",
+        "description": "For growing businesses",
+        "features": [
+          "Up to 10 locations",
+          "Advanced analytics",
+          "Priority support",
+          "10 GB storage",
+          "Multi-language support",
+          "Custom branding",
+          "API access"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "description": "For large organizations",
+        "features": [
+          "Unlimited locations",
+          "Enterprise analytics",
+          "24/7 dedicated support",
+          "Unlimited storage",
+          "Multi-language support",
+          "Custom branding",
+          "API access",
+          "SLA guarantee"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join thousands of restaurants already using Restroworks",
+      "primary": "Start Free Trial",
+      "secondary": "Learn More"
     }
   }
 }

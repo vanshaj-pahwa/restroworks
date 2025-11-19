@@ -137,7 +137,7 @@ export function HeroSection(props: HeroProps) {
             
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl leading-tight">
+              <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
                 {headline ? (
                   <span className={`block ${style === 'minimal' ? 'text-gray-900' : 'text-white'}`}>
                     {headline}
@@ -147,16 +147,19 @@ export function HeroSection(props: HeroProps) {
                     Welcome to Restroworks
                   </span>
                 )}
-                {highlightedText && (
-                  <span className="mt-2 block bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300 bg-clip-text text-transparent">
+              </h1>
+
+              {highlightedText && (
+                <h3 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl mt-2">
+                  <span className="block bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300 bg-clip-text text-transparent">
                     {highlightedText}
                   </span>
-                )}
-              </h1>
+                </h3>
+              )}
 
               {/* Subheading */}
               {subheadline && (
-                <p className={`text-xl sm:text-2xl md:text-3xl leading-relaxed max-w-4xl ${
+                <p className={`text-lg sm:text-xl md:text-2xl leading-relaxed max-w-4xl $${
                   style === 'split' ? '' : 'mx-auto'
                 } ${
                   style === 'minimal' ? 'text-gray-600' : 'text-white/90'

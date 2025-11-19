@@ -9,6 +9,7 @@ import { ArchiveBlockRenderer } from '@/components/blocks/archive-block';
 import { FormBlockRenderer } from '@/components/blocks/form-block';
 import { FeaturesBlockRenderer } from '@/components/blocks/features-block';
 import { TestimonialsBlockRenderer } from '@/components/blocks/testimonials-block';
+import { PricingBlock } from '@/components/blocks/pricing-block';
 import { HeroSection } from '@/components/sections/hero';
 
 const componentMap = {
@@ -17,6 +18,7 @@ const componentMap = {
   features: FeaturesBlockRenderer,  // Keep for backwards compatibility
   testimonial: TestimonialsBlockRenderer,  // Backend uses 'testimonial' (singular)
   testimonials: TestimonialsBlockRenderer,  // Keep for backwards compatibility
+  pricing: PricingBlock,  // Pricing block
   content: ContentBlockRenderer,
   mediaBlock: MediaBlockRenderer,
   customCTA: CtaBlockRenderer,  // Backend uses 'customCTA'

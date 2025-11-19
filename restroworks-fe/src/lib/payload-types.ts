@@ -108,11 +108,34 @@ export type TestimonialBlockType = {
   }>;
 };
 
+// Pricing section block
+export type PricingBlockType = {
+  blockType: 'pricing';
+  id?: string;
+  title?: string;
+  subtitle?: string;
+  plans?: Array<{
+    id?: string;
+    name?: string;
+    price?: string;
+    period?: string;
+    description?: string;
+    popular?: boolean;
+    features?: Array<{
+      id?: string;
+      feature?: string;
+    }>;
+    buttonText?: string;
+    buttonLink?: string;
+  }>;
+};
+
 // A "Block" is a union of all possible block types from Payload CMS
 export type Block =
   | HeroBlockType
   | FeatureBlockType
   | TestimonialBlockType
+  | PricingBlockType
   | ContentBlockType
   | MediaBlockType
   | CallToActionBlockType

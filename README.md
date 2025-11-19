@@ -392,12 +392,15 @@ restroworks/
 
 ### URL Structure
 ```
-/en          → English homepage
-/en/contact  → English contact page
-/es          → Spanish homepage
-/es/contact  → Spanish contact page
-/fr          → French homepage
-/fr/contact  → French contact page
+/en           → English homepage
+/en/products  → English products page
+/en/contact   → English contact page
+/es           → Spanish homepage
+/es/products  → Spanish products page
+/es/contact   → Spanish contact page
+/fr           → French homepage
+/fr/products  → French products page
+/fr/contact   → French contact page
 ```
 
 ### Language Switcher

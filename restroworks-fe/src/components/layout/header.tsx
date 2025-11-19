@@ -10,6 +10,7 @@ import { usePathname } from 'next/navigation';
 type Dictionary = {
   nav: {
     home: string;
+    products: string;
     contact: string;
   };
 };
@@ -25,6 +26,7 @@ export function Header({
 
   const navLinks = [
     { href: `/${lang}`, label: dictionary.nav.home },
+    { href: `/${lang}/products`, label: dictionary.nav.products },
     { href: `/${lang}/contact`, label: dictionary.nav.contact },
   ];
 

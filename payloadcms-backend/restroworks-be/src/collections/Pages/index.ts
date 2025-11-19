@@ -61,6 +61,8 @@ export const Pages: CollectionConfig<'pages'> = {
         require('../../blocks/Testimonial/config').Testimonial,
         // eslint-disable-next-line @typescript-eslint/no-require-imports
         require('../../blocks/CTA/config').CTA,
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
+        require('../../blocks/Pricing/config').Pricing,
         CallToAction,
         Content,
         MediaBlock,
