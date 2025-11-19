@@ -25,9 +25,17 @@ A modern, SEO-optimized, multi-language website built with Next.js 15 (frontend)
 <img width="2880" height="1558" alt="image" src="https://github.com/user-attachments/assets/330337c6-15b1-420f-a5c5-8d12b70a1679" />
 <img width="2880" height="1556" alt="image" src="https://github.com/user-attachments/assets/435d68f3-abda-4ba6-9317-f1c8bfbfcfda" />
 
+- Localization
+  <img width="2880" height="382" alt="image" src="https://github.com/user-attachments/assets/692b6b9f-0dc4-47f6-af25-95bcab5b4553" />
+  <img width="2876" height="1352" alt="image" src="https://github.com/user-attachments/assets/91da2e88-58e6-4a55-a649-3c0f41d5ce5b" />
+  <img width="2880" height="1554" alt="image" src="https://github.com/user-attachments/assets/ea6c9465-04de-468b-b276-ef249f4958c4" />
+  <img width="2880" height="1340" alt="image" src="https://github.com/user-attachments/assets/47488564-6f8e-4ea9-a970-33b4ddad11e5" />
+
+
 - <h3>Products Page</h3>
 <img width="2880" height="1558" alt="image" src="https://github.com/user-attachments/assets/b653489c-1cef-4f1e-b315-072c86dd5229" />
 <img width="2878" height="1556" alt="image" src="https://github.com/user-attachments/assets/271ef1d7-c48a-4602-87df-e129eb6c026a" />
+  
 
 - <h3>Contact Page</h3>
 <img width="2880" height="1562" alt="image" src="https://github.com/user-attachments/assets/8c66060e-f807-4d87-9c36-ac09feb8ef3b" />
