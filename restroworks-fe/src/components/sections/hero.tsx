@@ -119,7 +119,7 @@ export function HeroSection(props: HeroProps) {
                       fill
                       className="object-contain"
                       priority
-                      unoptimized={imageUrl.includes('localhost')}
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -272,7 +272,7 @@ export function HeroSection(props: HeroProps) {
                       fill
                       className="object-contain p-8"
                       priority
-                      unoptimized={imageUrl.includes('localhost')}
+                      unoptimized
                     />
                   </div>
                 </div>
